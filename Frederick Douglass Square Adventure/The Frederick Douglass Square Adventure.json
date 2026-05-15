@@ -1,0 +1,2113 @@
+{
+  "firstLayout": "Main Menu",
+  "gdVersion": {
+    "build": 266,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "00ded32b-de2f-41bc-aa56-3806773e3ab4",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "version": "1.0.0",
+    "name": "The Frederick Douglass Square Adventure",
+    "description": "An adventure around UMD to restore the legacy of Frederick Douglass",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "/home/chrissor/Documents/Classwork/2025 Fall/INST 490/Frederick-Douglass-UX-UI/docs",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "assets/icons/android-icon-144.png",
+      "android-icon-192": "assets/icons/android-icon-192.png",
+      "android-icon-36": "assets/icons/android-icon-36.png",
+      "android-icon-48": "assets/icons/android-icon-48.png",
+      "android-icon-72": "assets/icons/android-icon-72.png",
+      "android-icon-96": "assets/icons/android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "assets/icons/android-windowSplashScreenAnimatedIcon.png",
+      "desktop-icon-512": "assets/icons/desktop-icon-512.png",
+      "ios-icon-100": "assets/icons/ios-icon-100.png",
+      "ios-icon-1024": "assets/icons/ios-icon-1024.png",
+      "ios-icon-114": "assets/icons/ios-icon-114.png",
+      "ios-icon-120": "assets/icons/ios-icon-120.png",
+      "ios-icon-144": "assets/icons/ios-icon-144.png",
+      "ios-icon-152": "assets/icons/ios-icon-152.png",
+      "ios-icon-167": "assets/icons/ios-icon-167.png",
+      "ios-icon-180": "assets/icons/ios-icon-180.png",
+      "ios-icon-20": "assets/icons/ios-icon-20.png",
+      "ios-icon-29": "assets/icons/ios-icon-29.png",
+      "ios-icon-40": "assets/icons/ios-icon-40.png",
+      "ios-icon-50": "assets/icons/ios-icon-50.png",
+      "ios-icon-57": "assets/icons/ios-icon-57.png",
+      "ios-icon-58": "assets/icons/ios-icon-58.png",
+      "ios-icon-60": "assets/icons/ios-icon-60.png",
+      "ios-icon-72": "assets/icons/ios-icon-72.png",
+      "ios-icon-76": "assets/icons/ios-icon-76.png",
+      "ios-icon-80": "assets/icons/ios-icon-80.png",
+      "ios-icon-87": "assets/icons/ios-icon-87.png"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "assets\\images\\main_menu_blur.jpg",
+      "gdevelopLogoStyle": "light-colored",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 2,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": false
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [
+      "mobile"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/fonts/BilkoOpti-Regular.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/BilkoOpti-Regular.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/FDS North.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\FDS North.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/BilkoOpti-Regular.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/FDS Statue Zoom.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\FDS Statue Zoom.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/ItemObjectPlaceholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/ItemObjectPlaceholder.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/FDS Quote2.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/FDS Quote2.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/textures/stone_brick_floor_large.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/stone_brick_floor_large.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marbles/marble_purple.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marbles/marble_purple.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marbles/marble_blue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marbles/marble_blue.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marbles/marble_green.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marbles/marble_green.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marbles/marble_yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marbles/marble_yellow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marbles/marble_orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marbles/marble_orange.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marbles/marble_red.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marbles/marble_red.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/textures/circle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/circle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/arrow_head.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/arrow_head.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/arrow_base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/arrow_base.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/plus_one.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\plus_one.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/marble_collide.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\marble_collide.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/point_earned.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\point_earned.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/shoot_marble.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\shoot_marble.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/win.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\win.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/lose.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\lose.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/place_marble.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\place_marble.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/x.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/x.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/umd_button_idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/umd_button_idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/umd_button_hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/umd_button_hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/umd_button_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/umd_button_pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_background_border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/ui_background_border.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_inventory_select.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/ui_inventory_select.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/arrow_left_white.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/arrow_left_white.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/arrow_right_white.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/arrow_right_white.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/inspection_object.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/inspection_object.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/black_square.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/black_square.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/arrow_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/arrow_right.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/black_background_round.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/black_background_round.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/black_rounded_cornerns.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/black_rounded_cornerns.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/inventory_bag.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/inventory_bag.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/gold_frederick_douglass_statue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/gold_frederick_douglass_statue.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/map.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/map.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/bag_of_marbles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\bag_of_marbles.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/ItemObjectPlaceholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\ItemObjectPlaceholder.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/fds_hornbake_close2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/fds_hornbake_close2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/fds_quote3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/fds_quote3.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/fds_quote1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/fds_quote1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/inventory_bag_open.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/inventory_bag_open.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/table_background.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\photo_scraps\\table_background.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/swipe.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\swipe.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/whoosh2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\whoosh2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/footsteps.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\footsteps.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/zip_closed.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\zip_closed.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/whoosh3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\whoosh3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/whoosh1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\whoosh1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/muffled_voices_indoors.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\muffled_voices_indoors.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/zip_open.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\zip_open.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/whoosh4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\whoosh4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_stairwell_floor1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/hornbake_stairwell_floor1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_entrance_wide.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/hornbake_entrance_wide.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_background_border_bottom_gold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/ui_background_border_bottom_gold.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_background_black_border_bottom_gold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/ui_background_black_border_bottom_gold.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_background_black_border_gold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/ui_background_black_border_gold.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_background_border_gold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/ui_background_border_gold.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/eye_open.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\eye_open.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/fast_whoosh.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\fast_whoosh.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/pickup.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\pickup.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ux_soft.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\ux_soft.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/close_menu.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\close_menu.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop10.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\ui_pop10.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop7.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\ui_pop7.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\ui_pop4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\ui_pop3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/fds_hornbake_close2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\fds_hornbake_close2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/arrow_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\arrow_right.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/arrow_left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\arrow_left.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/gray_rounded_cornerns.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\gray_rounded_cornerns.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/map.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\map.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/close_map.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\close_map.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/open_map.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\open_map.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_entrance_wide.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\hornbake_entrance_wide.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/outdoor_ambience.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\outdoor_ambience.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_pop3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop_1_close.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_pop_1_close.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop_1_open.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_pop_1_open.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop_2_open.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_pop_2_open.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop_3_close.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_pop_3_close.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_pop_3_open.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_pop_3_open.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/marblesNPC.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/marblesNPC.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/IMG_0895.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/IMG_0895.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/textures/circle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\textures\\circle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/questionmark.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\questionmark.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/arrow_left_small.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\arrow_left_small.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/ui_background_border_gold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\ui_background_border_gold.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/inspection.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\inspection.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/inventory_bag.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\inventory_bag.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/gold_frederick_douglass_statue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\gold_frederick_douglass_statue.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/sound_on.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\sound_on.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/sound_off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\sound_off.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Driskell Entrance.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Driskell Entrance.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Diskell East.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Diskell East.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Driskell Mural.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Driskell Mural.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Driskell Art Gallery North 1.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Driskell Art Gallery North 1.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Driskell Art Gallery North 2.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Driskell Art Gallery North 2.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/STAMP Entrance.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\STAMP Entrance.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/STAMP Main Hallway.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\STAMP Main Hallway.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Hallway to STAMP Art Gallery.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Hallway to STAMP Art Gallery.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Entrance to STAMP Art Gallery.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Entrance to STAMP Art Gallery.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Inside Art Gallery1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Inside Art Gallery1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Inside Art Gallery2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Inside Art Gallery2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Hallway to MICA1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Hallway to MICA1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Entrance to MICA.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Entrance to MICA.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Inside MICA1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Inside MICA1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_GalleryRoom.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\hornbake_GalleryRoom.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_exit.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\hornbake_exit.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_OutsideSpecialCollections1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\hornbake_OutsideSpecialCollections1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/hornbake_SpecialCollectionsInside1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\hornbake_SpecialCollectionsInside1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/props/mica_trashcan.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\props\\mica_trashcan.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/paper_scrap.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\paper_scrap.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/stickman.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\objects\\stickman.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/x.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\x.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/fullscreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\fullscreen.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ui/not_fullscreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ui\\not_fullscreen.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/main_menu_blur.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\main_menu_blur.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Nyumburu Hallway.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Nyumburu Hallway.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Nyumburu Painting.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Nyumburu Painting.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/Nyumburu Performance Room.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\Nyumburu Performance Room.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/game_won.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\game_won.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-icon-192.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-icon-144.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-icon-96.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-icon-72.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-icon-48.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/android-icon-36.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/icons/ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/icons/ios-icon-20.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/ui_notification.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/ui_notification.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/props/mica_chair.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/props/mica_chair.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-1-column-1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-1-column-1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-1-column-2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-1-column-2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-1-column-3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-1-column-3.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-2-column-1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-2-column-1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-2-column-2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-2-column-2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-2-column-3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-2-column-3.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-3-column-1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-3-column-1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-3-column-2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-3-column-2.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-3-column-3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-3-column-3.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-1-column-4.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-1-column-4.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-2-column-4.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-2-column-4.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/photo_scraps/row-3-column-4.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/photo_scraps/row-3-column-4.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/nyumburu_entrance.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/nyumburu_entrance.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/nyumburu_main.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/nyumburu_main.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/nyumburu_elevator.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/nyumburu_elevator.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/images/props/nyumburu_main_stool.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/images/props/nyumburu_main_stool.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/elevator_ding.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sfx/elevator_ding.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/objects/puzzle_pieces/png/puzzle_piece_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/objects/puzzle_pieces/png/puzzle_piece_12.png",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ]
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "ExitMinigameButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Highlight",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "CursorHover",
+          "type": "CursorType::CursorHover",
+          "CursorType": "pointer"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/ui/x.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "FullScreenToggleMinigame",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "CursorHover",
+          "type": "CursorType::CursorHover",
+          "CursorType": "pointer"
+        }
+      ],
+      "animations": [
+        {
+          "name": "not_fullscreen",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\ui\\not_fullscreen.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "fullscreen",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\ui\\fullscreen.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "SoundToggleMinigame",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 3
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "CursorHover",
+          "type": "CursorType::CursorHover",
+          "CursorType": "pointer"
+        }
+      ],
+      "animations": [
+        {
+          "name": "on",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\ui\\sound_on.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "off",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\ui\\sound_off.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "ExitMinigameButton"
+      },
+      {
+        "objectName": "FullScreenToggleMinigame"
+      },
+      {
+        "objectName": "SoundToggleMinigame"
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "DataInitialized",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "FirstSceneInitialized",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "DEBUG",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "MinigameFlags",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Fill In The Quote",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Marbles",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Photo Puzzle",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "GameOver",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "deviceSupportsTouchscreen",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "PlacedCount",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/tutorial"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/exploration"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fill-in-the-quote"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/marbles"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/photo-puzzle"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/fdsg"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/minigame-persistent-ui"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/cursortype"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/linktools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/cursormovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectpickingtools"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/ui"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layouttemplate-duplicate-me"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/frederick-douglass-square"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hornbake-entrance"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hornbake-stairwell"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hornbake-special-collections"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hornbake-gallery-room"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hornbake-maryland-room"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/driskell-entrance"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/driskell-starting-point"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/driskell-mural"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/driskell-art-gallery"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/stamp-entrance"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/stamp-main-hallway"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hallway-to-stamp-art-gallery"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/stamp-art-gallery"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/stamp-art-gallery-2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hallway-to-mica"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/mica-entrance"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/inside-mica"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/nyumburu-entrance"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/nyumburu-main"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/nyumburu-elevator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/nyumburu-hallway"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/nyumburu-performance-room"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/nyumburu-painting"
+    }
+  ]
+}

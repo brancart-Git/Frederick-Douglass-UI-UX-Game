@@ -1,0 +1,108 @@
+{
+  "associatedLayout": "Exploration",
+  "name": "STAMP Art Gallery 2",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 720,
+      "layer": "Background",
+      "name": "Background",
+      "persistentUuid": "a599c09b-e524-40b7-bbda-f5d5c3827dd8",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "TransitionObject",
+      "persistentUuid": "49b9fa96-c664-4f1a-84d4-95f30287c57e",
+      "width": 0,
+      "x": 603,
+      "y": 566,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "targetLayout",
+          "type": "string",
+          "value": "STAMP Art Gallery"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0.6808510638297871,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "ItemObject",
+      "persistentUuid": "9b524a51-74ab-45d4-bc83-3a3d7997b550",
+      "width": 64,
+      "x": 396,
+      "y": 419,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "infoText",
+          "type": "string",
+          "value": "Frederick Douglass was actually the most photographed American of the 19th century. Believing it to be an important tool for civil rights due to its unbiased capture of reality, Douglass never smiled for photos in order to counter racist depictions of African-Americans at the time."
+        },
+        {
+          "name": "itemDescription",
+          "type": "string",
+          "value": "A torn piece of a photo of Frederick Douglass."
+        },
+        {
+          "name": "itemName",
+          "type": "string",
+          "value": "Scrap of Photo"
+        }
+      ]
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.6672773998329974,
+    "windowMask": false,
+    "selectedLayer": "Background"
+  }
+}

@@ -1,0 +1,3752 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Photo_32Puzzle",
+  "name": "Photo Puzzle",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 16,
+    "gridHeight": 16,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.737081631799415,
+    "windowMask": false,
+    "selectedLayer": "Tutorial",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [
+    {
+      "name": "Slideable",
+      "objects": []
+    }
+  ],
+  "variables": [
+    {
+      "name": "lastSlide",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "topLeftPosition",
+      "type": "structure",
+      "children": [
+        {
+          "name": "x",
+          "type": "number",
+          "value": 420
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "name": "GameOver",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "GameStarted",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "GamePaused",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Variable",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "Background",
+      "persistentUuid": "2278be2c-5df6-4464-8861-882655a0a21a",
+      "width": 0,
+      "x": 0,
+      "y": -16,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "ExitMinigameButton",
+      "persistentUuid": "6b9ab119-c965-487d-9759-e26ff1630fe0",
+      "width": 0,
+      "x": 36,
+      "y": 36,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 540,
+      "layer": "ExitPrompt",
+      "name": "PopupBackground",
+      "persistentUuid": "450913f3-7556-4f64-a750-9dc79ea8a1ad",
+      "width": 960,
+      "x": 160,
+      "y": 100,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 352,
+      "keepRatio": true,
+      "layer": "ExitPrompt",
+      "name": "ExitPopupText",
+      "persistentUuid": "e258efe9-f139-4ed2-8019-684f3a8b3e32",
+      "width": 896,
+      "x": 192,
+      "y": 336,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "ExitPrompt",
+      "name": "StayButton",
+      "persistentUuid": "588b0e55-eda3-4fe7-bd92-5092e7f210d0",
+      "width": 0,
+      "x": 736,
+      "y": 512,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "ExitPrompt",
+      "name": "LeaveButton",
+      "persistentUuid": "e258c27d-c69a-48ab-8d7f-0f4fce172b60",
+      "width": 0,
+      "x": 288,
+      "y": 512,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 540,
+      "layer": "WinPopup",
+      "name": "PopupBackground",
+      "persistentUuid": "83986b0e-b4b2-4ec0-93e8-c01710e813c7",
+      "width": 960,
+      "x": 160,
+      "y": 100,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 320,
+      "keepRatio": true,
+      "layer": "WinPopup",
+      "name": "WinPopupText",
+      "persistentUuid": "e5f06787-73d2-4d3c-a7c1-a12d8e12e4a4",
+      "width": 832,
+      "x": 224,
+      "y": 320,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "WinPopup",
+      "name": "LeaveButton",
+      "persistentUuid": "10a36ccf-433a-4729-ad74-0d6b24c28029",
+      "width": 0,
+      "x": 512,
+      "y": 512,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 540,
+      "layer": "Tutorial",
+      "name": "PopupBackground",
+      "persistentUuid": "1bedefeb-807a-4475-aaf5-f007009427b0",
+      "width": 960,
+      "x": 149,
+      "y": 129,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 352,
+      "keepRatio": true,
+      "layer": "Tutorial",
+      "name": "TutorialText",
+      "persistentUuid": "23d4c23e-f696-4bf3-9c6e-3c0278ed6d63",
+      "width": 832,
+      "x": 222,
+      "y": 426,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 44,
+      "keepRatio": true,
+      "layer": "Tutorial",
+      "name": "TutorialHeader",
+      "persistentUuid": "5ce8f187-69c1-4765-a13e-4f972a483b44",
+      "width": 896,
+      "x": 192,
+      "y": 208,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Tutorial",
+      "name": "StartButton",
+      "persistentUuid": "0c5d8b4d-1491-4ea8-abe1-ace6a9815e5e",
+      "width": 0,
+      "x": 499,
+      "y": 546,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "Persistent UI",
+      "name": "FullScreenToggleMinigame",
+      "persistentUuid": "d36ca7ce-f432-48b8-8c03-20061bb7f7ca",
+      "width": 104,
+      "x": 1176,
+      "y": 0,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "Persistent UI",
+      "name": "SoundToggleMinigame",
+      "persistentUuid": "18741d59-c4a7-4593-ad66-3bfd3cb0ae26",
+      "width": 104,
+      "x": 1071,
+      "y": 0,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "4250fa1e-e82e-4d35-89f7-3787a1b3b766",
+      "width": 196,
+      "x": -11,
+      "y": 96,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 192
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 544
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "ceefbf41-a255-4a06-9165-b10fa559c41b",
+      "width": 196,
+      "x": 112,
+      "y": 96,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 192
+        },
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 624
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "0c4a4c23-09d3-4d21-b21f-95503482e4ab",
+      "width": 196,
+      "x": 236,
+      "y": 96,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 704
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 192
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "a3b10409-7e3d-48ea-b880-47567caef173",
+      "width": 196,
+      "x": 112,
+      "y": 219,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 624
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 272
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "67a7fa16-1caa-468c-93ea-fc64f7f020dc",
+      "width": 196,
+      "x": -11,
+      "y": 466,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 544
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 432
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "b002c0fe-1922-4951-b8c9-bd9025f8dde5",
+      "width": 196,
+      "x": 236,
+      "y": 219,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 704
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 272
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "b4ffc9f4-7575-4e31-af27-31caf67c2082",
+      "width": 196,
+      "x": -11,
+      "y": 342,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 6
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 352
+        },
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 544
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "7440080a-7c5b-45c1-b7ef-45c38c3cb2b1",
+      "width": 196,
+      "x": 112,
+      "y": 466,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 624
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 432
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "d9ecb251-5459-40e4-9f5f-8a0b3826459b",
+      "width": 196,
+      "x": 236,
+      "y": 466,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 432
+        },
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 704
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "f02b2b3f-45a8-429b-bd98-9842c2b76f03",
+      "width": 196,
+      "x": -11,
+      "y": 219,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 272
+        },
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 544
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "50f5b21b-5946-49f4-8668-4034779ac9ef",
+      "width": 196,
+      "x": 112,
+      "y": 342,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 624
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 352
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "PhotoScrap",
+      "persistentUuid": "9bf932a9-2109-4b79-b049-d0bc6e8df3bc",
+      "width": 196,
+      "x": 236,
+      "y": 342,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 704
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 352
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "c67d4596-cc29-47d9-a2ef-abc364401fb2",
+      "width": 196,
+      "x": 564,
+      "y": 42,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "e58cd873-a01a-44ba-8d63-8602ea15c667",
+      "width": 196,
+      "x": 693,
+      "y": 41,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "5ffc8fb1-3cf7-4605-a765-a720c7d553e5",
+      "width": 196,
+      "x": 693,
+      "y": 171,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "d31f503b-718e-4417-bfe9-d2d07dfbb4b5",
+      "width": 196,
+      "x": 818,
+      "y": 171,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "450487f5-b167-4695-8fa1-7bd045e88713",
+      "width": 196,
+      "x": 565,
+      "y": 300,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 172,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "860fba8d-8201-46bd-8a61-b91ef7b7d5f6",
+      "width": 196,
+      "x": 568,
+      "y": 430,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "74387c3a-430b-4452-be6e-ae2c7e4ba03c",
+      "width": 196,
+      "x": 695,
+      "y": 300,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 172,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "92dfa1c0-d6d6-4318-9bdc-4a0d6a87816a",
+      "width": 196,
+      "x": 696,
+      "y": 430,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 172,
+      "keepRatio": true,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "15560300-648d-47aa-97fd-f1aa01df00fb",
+      "width": 196,
+      "x": 818,
+      "y": 429,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "6c5a9e9b-5927-4fd6-9376-09895cbe2e59",
+      "width": 196,
+      "x": 818,
+      "y": 300,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "0f11d040-954f-42be-a655-7e384b8b1342",
+      "width": 196,
+      "x": 564,
+      "y": 172,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 196,
+      "layer": "Puzzle",
+      "name": "GridSlot",
+      "persistentUuid": "113375ae-7e9a-47eb-abe3-a3b112401c4d",
+      "width": 196,
+      "x": 818,
+      "y": 42,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Background",
+      "persistentUuid": "d9b8deec-6bc6-44b8-9902-f946d0262dee",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\objects\\photo_scraps\\table_background.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 4256,
+                        "y": 0
+                      },
+                      {
+                        "x": 4256,
+                        "y": 2832
+                      },
+                      {
+                        "x": 0,
+                        "y": 2832
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "StayButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "UMDButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Stay"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 32,
+      "height": 540,
+      "leftMargin": 32,
+      "name": "PopupBackground",
+      "persistentUuid": "e2e36ad7-45bf-4253-a6a5-4080f10aff08",
+      "rightMargin": 32,
+      "texture": "assets\\ui\\ui_background_border_gold.png",
+      "tiled": true,
+      "topMargin": 32,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 960,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ExitPopupText",
+      "persistentUuid": "8b5423f4-265e-4d52-b9e1-0a047fd468f4",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Are you sure you want to quit the game?\nYou will be able to restart at any time.",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "center",
+      "characterSize": 43,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Are you sure you want to quit the game?\nYou will be able to restart at any time.",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 43,
+        "lineHeight": 54,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "LeaveButton",
+      "persistentUuid": "2447d340-8402-4e54-a3d3-cd50e513abcd",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "UMDButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Leave"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "WinPopupText",
+      "persistentUuid": "10128e01-ad8a-4630-9836-cb9c2294a311",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "\"Thanks so much! That looks a lot better!\"",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "center",
+      "characterSize": 43,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "\"Thanks so much! That looks a lot better!\"",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 43,
+        "lineHeight": 54,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TutorialText",
+      "persistentUuid": "8ac98ceb-d3b0-4083-919c-899da1d94413",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Drag the Puzzle Pieces to the correct locations to remake the photo",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "center",
+      "characterSize": 43,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Drag the Puzzle Pieces to the correct locations to remake the photo",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 43,
+        "lineHeight": 54,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": true,
+      "name": "TutorialHeader",
+      "persistentUuid": "3c5fc762-f4c3-4e85-b2d0-ad49ff2cd3c8",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "How To Play",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": true,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "How To Play",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "StartButton",
+      "persistentUuid": "1cd2bee5-959c-41e1-9c03-421b2bbb47f2",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "UMDButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Start"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "PhotoScrap",
+      "persistentUuid": "ca1423d4-248e-4003-a377-5ee7bbee3083",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "CorrectX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CorrectY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "IsPlaced",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "GridSlot",
+      "persistentUuid": "cfa9aa4c-0830-4de0-99d4-0de4b9952f7c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "PieceIndex",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/objects/puzzle_pieces/png/puzzle_piece_12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 167,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 167
+                      },
+                      {
+                        "x": 836,
+                        "y": 936
+                      },
+                      {
+                        "x": 167,
+                        "y": 936
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "StayButton"
+      },
+      {
+        "objectName": "StartButton"
+      },
+      {
+        "objectName": "LeaveButton"
+      },
+      {
+        "objectName": "PopupBackground"
+      },
+      {
+        "objectName": "ExitPopupText"
+      },
+      {
+        "objectName": "WinPopupText"
+      },
+      {
+        "objectName": "TutorialText"
+      },
+      {
+        "objectName": "TutorialHeader"
+      },
+      {
+        "objectName": "PhotoScrap"
+      },
+      {
+        "objectName": "GridSlot"
+      }
+    ]
+  },
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Init",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"WinPopup\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"ExitPrompt\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ExitMinigameButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StayButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LeaveButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Tutorial\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "PhotoScrap",
+                "=",
+                "RandomInRange(50,900)",
+                "=",
+                "RandomInRange(500,600)"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "GridSlot",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlacedCount",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "PhotoScrap",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "GridSlot",
+                "PieceIndex",
+                "=",
+                "PhotoScrap.Animation()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PhotoScrap",
+                "CorrectX",
+                "=",
+                "GridSlot.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PhotoScrap",
+                "CorrectY",
+                "=",
+                "GridSlot.Y()"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Tutorial",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "StartButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\ui_pop3.wav",
+                    "",
+                    "50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "GameStarted",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Tutorial\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "ExitMinigameButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "StartButton",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Exit Minigame",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "ExitMinigameButton",
+                "",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "ExitMinigameButton"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "ExitMinigameButton",
+                "Effect",
+                "\"Highlight\"",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ExitPrompt\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "StayButton",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "LeaveButton",
+                    "yes",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "ExitMinigameButton",
+                "",
+                "no",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "ExitMinigameButton",
+                "Effect",
+                "\"Highlight\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"ExitPrompt\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "StayButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\ui_pop3.wav",
+                    "",
+                    "50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "LeaveButton",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "StayButton",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ExitPrompt\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "LeaveButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\ui_pop3.wav",
+                    "",
+                    "50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PopScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Grid",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CursorType::ChangeCursorType"
+              },
+              "parameters": [
+                "",
+                "\"default\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "GameOver",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ExitPrompt\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Tutorial\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "variables": [
+                    {
+                      "name": "isGameOver",
+                      "type": "boolean",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "PhotoScrap",
+            "IsPlaced",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "PhotoScrap",
+            "GridSlot",
+            "50",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "GridSlot",
+            "PieceIndex",
+            "=",
+            "PhotoScrap.Animation()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetX"
+          },
+          "parameters": [
+            "PhotoScrap",
+            "=",
+            "PhotoScrap.Variable(CorrectX)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetY"
+          },
+          "parameters": [
+            "PhotoScrap",
+            "=",
+            "PhotoScrap.Variable(CorrectY)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "PhotoScrap",
+            "IsPlaced",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "PhotoScrap",
+            "Draggable",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "PlacedCount",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\pickup.wav",
+            "",
+            "50",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlacedCount",
+                "=",
+                "12"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"gameOver\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Game Over",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"gameOver\"",
+                ">=",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\win.wav",
+                "",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"WinPopup\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ExitMinigameButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LeaveButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "MinigameFlags[\"Photo Puzzle\"]",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"WinPopup\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "LeaveButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\ui_pop3.wav",
+                    "",
+                    "50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PopScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Minigame Persistent UI"
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Puzzle",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "WinPopup",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "ExitPrompt",
+      "renderingType": "2d",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Tutorial",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Persistent UI",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "CursorHover",
+      "type": "CursorType::CursorHover"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    }
+  ]
+}

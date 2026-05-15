@@ -1,0 +1,220 @@
+{
+  "associatedLayout": "Exploration",
+  "name": "Hornbake Entrance",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "Background",
+      "persistentUuid": "f5d0205d-4ccd-4dde-9851-5867884be3e7",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "flippedX": true,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "TransitionObject",
+      "persistentUuid": "f4a2d1d5-d8fd-44b3-9163-13353bc626b9",
+      "width": 0,
+      "x": 48,
+      "y": 416,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "targetLayout",
+          "type": "string",
+          "value": "Frederick Douglass Square"
+        },
+        {
+          "name": "hoverTooltip",
+          "type": "structure",
+          "children": [
+            {
+              "name": "font",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "fontSize",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "value": "null"
+            },
+            {
+              "name": "textAlign",
+              "type": "string",
+              "value": "left"
+            },
+            {
+              "name": "x",
+              "type": "number",
+              "value": -36
+            },
+            {
+              "name": "y",
+              "type": "number",
+              "value": -86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 54,
+      "customSize": false,
+      "flippedX": true,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "TransitionObject",
+      "persistentUuid": "f9d1d9ef-460b-4f3d-8e2b-9fa43990c471",
+      "width": 0,
+      "x": 333,
+      "y": 349,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "targetLayout",
+          "type": "string",
+          "value": "Hornbake Stairwell"
+        },
+        {
+          "name": "hoverTooltip",
+          "type": "structure",
+          "children": [
+            {
+              "name": "font",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "fontSize",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "value": "To Stairwell"
+            },
+            {
+              "name": "textAlign",
+              "type": "string",
+              "value": "center"
+            },
+            {
+              "name": "x",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "y",
+              "type": "number",
+              "value": -86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 130,
+      "customSize": false,
+      "flippedX": true,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "TransitionObject",
+      "persistentUuid": "694348ac-ab82-4dfb-b62d-8eadaaa38435",
+      "width": 0,
+      "x": 684,
+      "y": 348,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "targetLayout",
+          "type": "string",
+          "value": "Hornbake Special Collections"
+        },
+        {
+          "name": "hoverTooltip",
+          "type": "structure",
+          "children": [
+            {
+              "name": "fontSize",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "value": "To Special Collections"
+            },
+            {
+              "name": "textAlign",
+              "type": "string",
+              "value": "center"
+            },
+            {
+              "name": "x",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "y",
+              "type": "number",
+              "value": -86
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 16,
+    "gridHeight": 16,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.6244537826600031,
+    "windowMask": false,
+    "selectedLayer": "SceneObjects"
+  }
+}

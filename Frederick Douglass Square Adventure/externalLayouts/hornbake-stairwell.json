@@ -1,0 +1,83 @@
+{
+  "associatedLayout": "Exploration",
+  "name": "Hornbake Stairwell",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "Background",
+      "persistentUuid": "f5d0205d-4ccd-4dde-9851-5867884be3e7",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 327,
+      "customSize": false,
+      "flippedX": true,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "TransitionObject",
+      "persistentUuid": "9cb78b79-6a6d-469f-a613-fc52579c77c6",
+      "width": 0,
+      "x": 226,
+      "y": 558,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "targetLayout",
+          "type": "string",
+          "value": "Hornbake Entrance"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 55,
+      "keepRatio": true,
+      "layer": "SceneObjects",
+      "name": "StatueCollectible",
+      "persistentUuid": "edd48632-2726-4df9-a40d-23d8e54a8713",
+      "width": 55,
+      "x": 201,
+      "y": 277,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 16,
+    "gridHeight": 16,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.7130377630690443,
+    "windowMask": false,
+    "selectedLayer": "SceneObjects"
+  }
+}

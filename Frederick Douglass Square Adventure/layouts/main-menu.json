@@ -1,0 +1,1217 @@
+{
+  "b": 51,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Main_32Menu",
+  "name": "Main Menu",
+  "r": 226,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 24,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.7370816317994044,
+    "windowMask": false,
+    "selectedLayer": "Main Menu",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 224,
+      "keepRatio": true,
+      "layer": "Main Menu",
+      "name": "Title",
+      "persistentUuid": "f1797e56-d524-4c49-89ba-549da8c91b32",
+      "width": 1088,
+      "x": 96,
+      "y": 208,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 96,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "Main Menu",
+      "name": "StartButton",
+      "persistentUuid": "5aebedf3-0c2f-4cec-9d78-822c10de13bd",
+      "width": 384,
+      "x": 448,
+      "y": 384,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 752,
+      "layer": "Background",
+      "name": "Main_Menu_Background",
+      "persistentUuid": "ba6b1fc4-fb94-40d4-a68c-e8e29e9d1239",
+      "width": 1312,
+      "x": -16,
+      "y": -16,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main Menu",
+      "name": "CreditsButton",
+      "persistentUuid": "2cd0cac2-b637-47e5-af9d-0537a5dabaf4",
+      "width": 0,
+      "x": 512,
+      "y": 544,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 512,
+      "layer": "Credits",
+      "name": "CreditsTextLeft",
+      "persistentUuid": "9ab0c9e7-f287-4a2b-980a-beb21c5c8ff5",
+      "width": 576,
+      "x": 128,
+      "y": 96,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 544,
+      "layer": "Credits",
+      "name": "CreditsTextRight",
+      "persistentUuid": "b5a57f12-8e1c-45a4-a5e2-7763ea65e45c",
+      "width": 480,
+      "x": 640,
+      "y": 96,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Credits",
+      "name": "CreditsButton",
+      "persistentUuid": "7c4830b6-d45c-4ddd-9054-2792f1c32ccf",
+      "width": 0,
+      "x": 512,
+      "y": 544,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 289,
+      "keepRatio": true,
+      "layer": "GameOver",
+      "name": "GameOverTitle",
+      "persistentUuid": "9bddaac8-06dc-4a0b-876a-c42b9a1d4ea3",
+      "width": 1216,
+      "x": 32,
+      "y": 176,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GameOver",
+      "name": "CreditsButton",
+      "persistentUuid": "eefa8ffd-f660-4dbe-b560-d4a074267470",
+      "width": 0,
+      "x": 512,
+      "y": 544,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 224,
+      "keepRatio": true,
+      "layer": "GameOver",
+      "name": "GameOverText",
+      "persistentUuid": "4434259c-a86f-4809-9e04-fe908bbe2507",
+      "width": 1024,
+      "x": 128,
+      "y": 256,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.3,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "FullscreenUI",
+      "name": "FullScreenToggleMinigame",
+      "persistentUuid": "3ae9ed27-a9b1-40be-81f6-0d142a2259e1",
+      "width": 104,
+      "x": 1176,
+      "y": 0,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "FullscreenUI",
+      "name": "SoundToggleMinigame",
+      "persistentUuid": "3ee6e0d4-85d2-4a4f-831e-4c8efffa6661",
+      "width": 104,
+      "x": 1072,
+      "y": -1,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Title",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "The Frederick Douglass Square\nAdventure",
+      "font": "assets/fonts/BilkoOpti-Regular.otf",
+      "textAlignment": "center",
+      "characterSize": 65,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 8,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "The Frederick Douglass Square\nAdventure",
+        "font": "assets/fonts/BilkoOpti-Regular.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 65,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "615de0316452630b9f4f6a39decc82e2449b82c1afd1ff24d6470dad2922177b",
+      "name": "StartButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "UMDButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Start"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Main_Menu_Background",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\main_menu_blur.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 397,
+                        "y": 0
+                      },
+                      {
+                        "x": 397,
+                        "y": 223
+                      },
+                      {
+                        "x": 0,
+                        "y": 223
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "615de0316452630b9f4f6a39decc82e2449b82c1afd1ff24d6470dad2922177b",
+      "name": "CreditsButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "UMDButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Credits"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "CreditsTextLeft",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Project Management:\n\nProgramming:\n\nSound:\n\nArt Assets:\n\nClient Communications:\n\nHistorical Research and Image Assets:\n\n\nAdditional Program (Jigsaw Puzzle assests):",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "left",
+      "characterSize": 34,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 4,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Project Management:\n\nProgramming:\n\nSound:\n\nArt Assets:\n\nClient Communications:\n\nHistorical Research and Image Assets:\n\n\nAdditional Program (Jigsaw Puzzle assests):",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 34,
+        "lineHeight": 35,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "CreditsTextRight",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Christian Sorensen\n\nChristian Sorensen\n\nChristian Sorensen\n\nMichelle Starcher\n\nMichelle Starcher\n\nSamnorp Deung,\nMarcello Soriano\n\nBrandon C,\nAndy Chen",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "right",
+      "characterSize": 34,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 4,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Christian Sorensen\n\nChristian Sorensen\n\nChristian Sorensen\n\nMichelle Starcher\n\nMichelle Starcher\n\nSamnorp Deung,\nMarcello Soriano\n\nBrandon C,\nAndy Chen",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "right",
+        "verticalTextAlignment": "top",
+        "characterSize": 34,
+        "lineHeight": 35,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "GameOverTitle",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "You won!",
+      "font": "assets/fonts/BilkoOpti-Regular.otf",
+      "textAlignment": "center",
+      "characterSize": 65,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 8,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "You won!",
+        "font": "assets/fonts/BilkoOpti-Regular.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 65,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "GameOverText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "You successfully gathered all of the Frederick Douglass figurines, and restored the historical exhibits to their former glory!\n\nThanks for playing!",
+      "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+      "textAlignment": "center",
+      "characterSize": 34,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 4,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "You successfully gathered all of the Frederick Douglass figurines, and restored the historical exhibits to their former glory!\n\nThanks for playing!",
+        "font": "assets\\fonts\\BilkoOpti-Regular.otf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 34,
+        "lineHeight": 57,
+        "color": "255;255;255"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Title"
+      },
+      {
+        "objectName": "GameOverTitle"
+      },
+      {
+        "objectName": "GameOverText"
+      },
+      {
+        "objectName": "StartButton"
+      },
+      {
+        "objectName": "CreditsButton"
+      },
+      {
+        "objectName": "Main_Menu_Background"
+      },
+      {
+        "objectName": "CreditsTextLeft"
+      },
+      {
+        "objectName": "CreditsTextRight"
+      }
+    ]
+  },
+  "events": [
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::Text::SetLineHeight"
+          },
+          "parameters": [
+            "Title",
+            "=",
+            "Title.FontSize()*1.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Credits\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TouchSimulateMouse"
+          },
+          "parameters": [
+            "",
+            "yes"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"GameOver\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"GameOver\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\game_won.wav",
+                "",
+                "50",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "StartButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\ui_pop3.wav",
+            "",
+            "50",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            ".25"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Tutorial\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "CreditsButton",
+            "="
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\ui_pop3.wav",
+            "",
+            "50",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"GameOver\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+              },
+              "parameters": [
+                "CreditsButton",
+                "=",
+                "\"Return\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "else",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "else",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Credits\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+              },
+              "parameters": [
+                "CreditsButton",
+                "=",
+                "\"Credits\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "GameOver",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main Menu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "StartButton",
+                    "yes",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "GameOver",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main Menu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "StartButton",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "else",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Minigame Persistent UI"
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Main Menu",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Credits",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "GameOver",
+      "renderingType": "2d",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "FullscreenUI",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "CursorHover",
+      "type": "CursorType::CursorHover"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    }
+  ]
+}
