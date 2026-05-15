@@ -2,79 +2,116 @@
 
 ## Project Overview
 
-This repository contains all necessary resources and documentation for the Frederick Douglass Square Adventure game. The project aims to serve as a foundation to create engaging digital experiences centered around the legacy of Frederick Douglass.
+The **Frederick Douglass Square Adventure** project is an educational and interactive game experience designed to highlight the legacy and history of Frederick Douglass through engaging gameplay and digital storytelling.
 
-## Contents
+This repository contains the continued development of the original game created by a previous capstone team. During this semester, our team focused on improving the gameplay experience by redesigning and replacing the original **sliding puzzle minigame** with a new **jigsaw puzzle game** to create a more engaging and user-friendly interaction for players.
 
-- **Game Page on Frederick Douglass Digital Square Website**  
-    
-- **Background Image Resources**  
-    
-- **UI Icons and Elements**  
-    
-- **Project Milestones**  
-    
-  - Files for project milestones across the semester.
-
-
-- **Additional Deliverables**  
-    
-  - Past meeting summaries  
-  - Documentation for game development, UI icon designs, background images, and more
-
-## Project Milestones
-
-- [**Requirements Interview Questions**](http://Client_Requirements_Gathering_Questions.pdf)  
-    
-- [**Requirements Interview Document**](http://Client_Requirements_Interview_Document.pdf)  
-    
-- [**Project Plan**](http://Project_Plan_Continued_Development.pdf)  
-    
-- [**Mid-Semester Status Presentation**](http://Mid_Semester_Presentation.pptx) and [**Mid-Semester\_Presentation.pdf**](http://Mid-Semester_Presentation.pdf)  
-    
-- [**Final Report**](http://Project_Final_Report.pdf)  
-    
-- [**Final Presentation**](http://Frederick_Douglass_UX_UI_Final_Presentation.pptx) and [**Frederick\_Douglass\_UX\_UI\_Final\_Presentation.pdf**](http://Frederick_Douglass_UX_UI_Final_Presentation.pdf)
-
-## Documentation
-
-- [**The Frederick Douglass Square Game System**](http://Frederick_Douglass_Square_Game_System_Documentation.pdf)  
-    
-- [**Background Image Resources**](http://Background_Image_Documentation.pdf)  
-    
-- [**UI Icons and Elements**](http://UI_Icon_Guide.pdf)
-
-## Project File Structure
-
-This is the project file structure. Underlined titles are files, whereas non-underlined titles are folders. This project does not use any external libraries or APIs.
-
-* **Frederick Douglass Square Adventure:** The main project files for GDevelop 5\.  
-  * **assets:**  The various digital assets used in the demo.  
-    * **fonts:** Fonts used in the game.  
-    * **icons:** Project icons for various platforms, including the web favicon.  
-    * **images:** Photo images used for locations in the game.  
-    * **objects:** Various sprites used for game objects.  
-    * **sfx:** Sound effects.  
-    * **textures:** Flat textures used for the marble minigame.  
-    * **ui:** Sprites used for UI objects.  
-  * **eventsFunctionsExtensions:** Various files for the GDevelop5 extensions the system uses.  
-  * **externalEvents:** GDevelop5 event sheets. Contains the FDSG sheet, in which the Frederick Douglass Square Game System is defined.  
-  * **externalLayouts:** External layouts used in the GDevelop5 project. Each one represents a screen you can navigate to in-game.  
-  * **layouts:** The GDevelop5 Scenes used in the game project.  
-  * **The Frederick Douglass Square Adventure:** The main GDevelop5 project file of the game.  
-* **docs:** The root folder used by Github Pages to load the webpage. Builds should be exported here.
-
-## README File
-
-This README file lists all client deliverables and serves as a guide for the project materials.
+The project was developed using **GDevelop 5** and includes all assets, documentation, and deliverables related to the project.
 
 ---
 
-For any questions or further information, please feel free to reach out to the team.
+# Semester Contributions
 
-- ***Christian Sorensen**: [chrissor@umd.edu](mailto:chrissor@umd.edu)*  
-- ***Marcelo Soriano**: [msorian0@terpmail.umd.edu](mailto:msorian0@terpmail.umd.edu)*  
-- ***Michelle Starcher**: [mtstar@terpmail.umd.edu](mailto:mtstar@terpmail.umd.edu)*  
-- ***Samnorp Deung**: [sdeung@terpmail.umd.edu](mailto:sdeung@terpmail.umd.edu)*  
-- ***Kyle Tu**: [kyletu@terpmail.umd.edu](mailto:kyletu@terpmail.umd.edu)*
+This semester’s development primarily focused on enhancing the game’s puzzle mechanics and overall player experience.
 
+## Major Improvements
+
+* Replaced the original sliding puzzle minigame with a fully redesigned jigsaw puzzle system
+* Improved puzzle interaction and usability
+* Enhanced gameplay flow and player engagement
+* Updated project documentation and deliverables
+
+---
+
+# Technologies Used
+
+* **GDevelop 5**
+* Game UI/UX Design
+* Event-based Game Logic
+* Digital Asset Integration
+
+---
+
+# Repository Contents
+
+## Game Project Files
+
+Contains the complete game project and supporting resources for the Frederick Douglass Square Adventure game.
+
+### Included Resources
+
+* Background image assets
+* UI icons and interface elements
+* Sound effects and textures
+* Game scenes and layouts
+* Game logic and event sheets
+* Semester deliverables and documentation
+
+---
+
+# About the Jigsaw Puzzle Redesign
+
+One of the primary goals of this semester’s capstone work was to improve the user experience of the puzzle minigame. The previous implementation used a sliding puzzle mechanic, which was replaced with a jigsaw puzzle system to provide:
+
+* Better player interaction
+* More intuitive gameplay
+* Increased engagement
+
+This redesign builds upon the strong foundation established by the previous capstone team while introducing a new gameplay experience for future users.
+
+---
+
+# Team Members
+
+## Current Semester Team
+
+* Brandon Cartagena (Worked on the game)
+* Andy Chen (Worked on the game)
+* Andrew Zhang
+* Hanish Vadlamudi
+* Joshua Okeke
+
+## Previous Semester Team
+
+* Christian Sorensen
+* Marcelo Soriano
+* Michelle Starcher
+* Samnorp Deung
+* Kyle Tu
+
+---
+
+# Documentation
+
+Project documentation includes:
+
+* System documentation
+* UI and asset references
+* Presentation materials
+* Final deliverables
+
+---
+
+# Running the Project
+
+## Requirements
+
+* GDevelop 5 installed
+
+## Setup
+
+1. Clone the repository
+2. Open the project in GDevelop 5
+3. Run the project through the GDevelop preview system
+
+---
+
+# Acknowledgements
+
+Special thanks to the previous capstone team for developing the original Frederick Douglass Square Adventure framework and establishing the foundation for continued development.
+
+---
+
+# Contact
+
+For questions regarding the project or continued development, please contact the current development team through GitHub.
