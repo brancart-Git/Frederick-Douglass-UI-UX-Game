@@ -109,9 +109,3 @@ Project documentation includes:
 # Acknowledgements
 
 Special thanks to the previous capstone team for developing the original Frederick Douglass Square Adventure framework and establishing the foundation for continued development.
-
----
-
-# Contact
-
-For questions regarding the project or continued development, please contact the current development team through GitHub.
